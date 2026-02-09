@@ -8,7 +8,7 @@ class Config:
     AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
     AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT")
     AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-10-21")
-    PORT = int(os.getenv("PORT", 5000))
+    PORT = int(os.getenv("PORT", 5001))
     
     COSMOS_ENDPOINT = os.getenv("COSMOS_ENDPOINT")
     COSMOS_KEY = os.getenv("COSMOS_KEY")
