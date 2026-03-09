@@ -340,3 +340,4 @@ All errors return JSON responses in the format:
 ## Support
 
 For issues and questions, please [add your support contact information].
+# trustlens-app
