@@ -9,14 +9,9 @@ from app.routes.analyze import analyze_bp
 from app.config.settings import Config
 
 def create_app():
-    static_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public')
-    app = Flask(__name__, static_folder=static_path, static_url_path='')
+    app = Flask(__name__)
     
     CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
-    
-    @app.route('/')
-    def serve_index():
-        return send_from_directory(app.static_folder, 'index.html')
     
     @app.route('/api/health')
     def health_check():
